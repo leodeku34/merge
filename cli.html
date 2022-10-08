@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gastic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?
+    family=poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+    awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    *{    
+    margin: 0
+    padding 0;
+    font-family: 'Poppins', sans-serif;
+    }
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/home-background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+body{
+    background-color: rgb(247, 236, 205);
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: left;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-links ul a{
+    color: rgb(248, 10, 10);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #efd828;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    left: 1px;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 57px;
+    color: rgb(179, 177, 182);
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero{    
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(233, 232, 232);
+    background-color: transparent;
+    color: rgb(253, 25, 9);
+    cursor: pointer;
+    
+}
+.hero:hover{
+    border: 3px solid#f80707;
+    background: #fff602;
+    transition: 2s;
+}
+
+.hero:active{
+    border: 2px solid blue;
+    background: lightgreen;
+    transition: 0.2s;
+    color: deepskyblue;
+
+}
+
+nav .fa{
+    display: block;
+    color: rgb(251, 255, 255);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media(max-width: 700px){
+    .text-box{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #fff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+   
+}
+
+
+
+.movie{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(13, 12, 12);
+}
+p{
+    color: rgb(15, 14, 14);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-col{
+    flex-basis: 31%;
+    background: #fad1ad;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 4s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+    color: rgb(14, 14, 14);
+}
+
+.movie-col :hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+@media(max-width: 700px){
+      .row{
+        flex-direction: column;
+      }
+}
+
+.movie-col img{
+    width: 300px;
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+.about-col img{
+    border-radius: 10px;
+  
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(11, 11, 11);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+
+}
+
+
+
+.FAQ{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.FAQ-col img{
+   width: 100%;
+   border-radius: 10px
+}
+
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="cli.html"><img src="img/LAZY.png" alt="" /></a>
+        <div class="nav-links">
+          <i class="fa fa-times"></i>
+          <ul>
+            <li nav-links ul li><a href="#">HOME</a></li>
+            <li nav-links ul li><a href="#">MOVIES</a></li>
+            <li nav-links ul li><a href="#">ABOUT</a></li>
+            <li nav-links ul li><a href="#">FAQ</a></li>
+            <li nav-links ul li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+           <i class="fa fa-bars"></i>
+        </nav>
+      <div class="text-box">
+        <h1>NEVER GET BORED ON MERGE MOVIES</h1>
+        <p>
+          Sign in now and get a 7day trial for free, Stay tuned to see Merge Movies to it's
+          full pontential.<br />Watch all series on Merge Movies, Sign up for
+          premium and to play free pc games on Merge Gaming.
+        </p>
+        <a href="" class="hero">Sign Up And Watch</a></button>
+      </div>
+    </section>
+
+   
+
+
+<!----------Movies--------->
+
+<section class="movie">
+  <h1>Movies which are currently avalaible;</h1>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatem pariatur necessitatibus deleniti, numquam voluptates cum voluptas magnam accusantium illum amet tempora suscipit sed adipisci.</p>
+  <div class="row">
+    <div class="movie-col">
+      <a href="love.html"><h3>Love and romantic Movies</h3></a>
+      <img src="images/movie-6.jpg" alt="">
+    </div>
+    <div class="movie-col">
+      <h3>Action Movies</h3>
+           <img src="images/movie-5.jpg" alt="">
+    </div>
+    <div class="movie-col">
+      <h3>Comedy Movies</h3>
+         <img src="images/popular-movie-7.jpg" alt="">
+    </div>
+
+
+</section>
+
+<!-----------------about------------->
+
+<section class="about">
+  <h1>What Should Know About Merge.</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Quibusdam eligendi error culpa et? Maxime totam eveniet non
+      eum harum error animi est molestiae ab exercitationem fugiat 
+      hic explicabo voluptate numquam, rem ea. Aut, modi hic.</p>
+
+      <div class="row">
+        <div class="about-col">
+            <div class="layer">
+              <h3>Do you Know About Merge Gaming</h3>
+              
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing e
+              lit. Eveniet quibusdam, dicta error velit aperiam aspernatu
+              r, odio placeat quo impedit minima alias ipsum! Iste unde ad d
+              olor nesciunt officia sint recusandae.</p>
+              <div class="dodod"><img src="images/RANGE.png" alt=""></div>
+        </div>
+      </div>
+      <h3>Did You know About Merges Apps</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing e
+        lit. Eveniet quibusdam, dicta error velit aperiam aspernatu
+        r, odio placeat quo impedit minima alias ipsum! Iste unde ad d
+        olor nesciunt officia sint recusandae.</p>
+        <div class="dodod"><img src="img/1" alt=""></div>
+      </div>
+</section>
+
+
+<section class="FAQ">
+   <h1>WHO CREATED MERGE?</h1>
+  <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dignissimos rerum voluptatibus, nesciunt velit corporis iusto voluptate. Officiis placeat, atque debitis alias unde adipisci, assumenda laborum omnis, nisi praesentium dignissimos!</P>
+</section>
+
+<div class="row">
+  <div class="FAQ">
+    <img src="images/mm.png" alt="">
+    <h3>Leo Derckens</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error labore provident amet magni tempore illum laudantium, dolores soluta deserunt modi! Autem quidem, quae quia tempora harum illo neque numquam officia esse commodi dolores, ducimus corrupti placeat iste enim tempore voluptatem.</p>
+  </div>
+</div>
+
+<section class="contact">
+  
+</section>
+
+  </body>
+</html>
